@@ -1,0 +1,8 @@
+[ClassVersion("1.0.0.0"), FriendlyName("xTextEdit")]
+class xTextEdit : OMI_BaseResource
+{
+    [Key, Description("Path to the file to modify.")] String Path;
+    [Write, Description("Encoding of the file.")] String Encoding;
+    [Key, Description("Script block to perform the modification.")] String SetScript;
+    [Key, Description("Script block to test if modification is required.")] String TestScript;
+};
