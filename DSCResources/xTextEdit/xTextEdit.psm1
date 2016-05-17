@@ -48,7 +48,7 @@ function Set-TargetResource
 
     & $script
 
-    $ss | Out-File $Path -Encoding $Encoding
+    Set-Content $Path -Value $ss -Encoding $Encoding
 }
 
 
